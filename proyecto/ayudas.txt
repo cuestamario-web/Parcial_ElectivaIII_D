@@ -1,0 +1,15 @@
+Instalación de dependencias Python: pip install -r requirements.txt
+
+Instalación de dependencias Node.js: npm install
+
+Imagen base recomendada para Node.js: node:18-alpine
+
+Imagen base recomendada para Python: python:3.10-alpine
+
+Imagen alternativa (más compatible): node:18 / python:3.10
+
+Imagen oficial para base de datos: mysql:8
+
+Ruta de almacenamiento de datos en MySQL: /var/lib/mysql
+
+forma de montar inicialización automática de bd :-v "%cd%/init.sql:/docker-entrypoint-initdb.d/init.sql"
